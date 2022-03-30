@@ -66,6 +66,31 @@
         isOlderThanXYears(competingAthlete1.birthYear)
         isOlderThanXYears(competingAthlete2.birthYear)
 
+        let months = ["Jan", "Feb", "March", "April", "May"]
+
+        for (let index in months) {
+            if (months[index] === months[1]) {
+                console.log("Olympics are in " + months[index])
+            }
+        }
+
+        function secondsInADay() {
+            let seconds = 60 * 60 * 24
+            console.log("Seconds in a day " + seconds)
+        }
+        secondsInADay()
+
+        function generateError(input) {
+            try {
+                if (input > 4) {
+                    throw "too large"
+                }
+            } catch (err) {
+                console.error(err)
+            }
+        }
+        generateError(5)
+
     </script>
 </body>
 </html>
